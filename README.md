@@ -1,6 +1,6 @@
 # CAIL2018比赛任务-法律判决预测-BERT基础模型
  
-===================================全代码包含详细的中文注释======================================
+================全代码包含详细的中文注释===============
 
 1. 使用Pytorch和Transformers框架实现
 
@@ -8,88 +8,37 @@
 
 3. 为了便于理解和学习，代码没有过度集成
 
-===================================全代码包含详细的中文注释======================================
+===============全代码包含详细的中文注释=================
  
-## Getting Started
+## 文件介绍
  
-These instructions will get you a copy of the project up and running on your local machine for development and testing purposes. See deployment for notes on how to deploy the project on a live system.
+data_cail2018文件夹   --->   包含CAIL2018官方发布的训练集train.json和测试集test.json，以及罪名标签列表unique_labels.json
+
+models文件夹   --->   包含模型网络结构BERT.py
+
+utils.py   --->   包含数据读取、预处理、数据加载等工具类和函数
+
+train.py   --->   训练一个epoch的代码
+
+valid.py   --->   验证一个epoch的代码
+
+run.py   --->   执行模型训练
+
+test.py   --->   执行模型测试
  
-### Prerequisites
+### 模型训练
  
-What things you need to install the software and how to install them
- 
-```
-Give examples
-```
- 
-### Installing
- 
-A step by step series of examples that tell you how to get a development env running
- 
-Say what the step will be
- 
-```
-Give the example
-```
- 
-And repeat
+直接运行run.py文件，可以执行模型训练，记得修改随机数种子
  
 ```
-until finished
+python run.py
 ```
  
-End with an example of getting some data out of the system or using it for a little demo
+### 模型测试
  
-## Running the tests
- 
-Explain how to run the automated tests for this system
- 
-### Break down into end to end tests
- 
-Explain what these tests test and why
+执行test.py文件，可以执行模型测试
  
 ```
-Give an example
+python test.py
 ```
- 
-### And coding style tests
- 
-Explain what these tests test and why
- 
-```
-Give an example
-```
- 
-## Deployment
- 
-Add additional notes about how to deploy this on a live system
- 
-## Built With
- 
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
- 
-## Contributing
- 
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
- 
-## Versioning
- 
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
- 
-## Authors
- 
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
- 
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
- 
-## License
- 
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
- 
-## Acknowledgments
- 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
+
