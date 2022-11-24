@@ -1,8 +1,6 @@
-# LegalAI-CAIL-JudgmentPredction
- 法律判决预测任务
 # Project Title
  
-One Paragraph of project description goes here
+CAIL2018比赛任务-法律判决预测-BERT实现（全代码含详细中文注释）
  
 ## Getting Started
  
