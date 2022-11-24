@@ -1,5 +1,6 @@
 ## CAIL2018比赛任务-法律判决预测-BERT基础模型
  
+### 1. 说明
 1. 全代码包含详细的中文注释！！！
 
 2. 使用Pytorch和Transformers框架实现
@@ -10,7 +11,7 @@
 
 
  
-### 1. 文件介绍
+### 2. 文件介绍
  
 data_cail2018文件夹   --->   包含CAIL2018官方发布的训练集train.json和测试集test.json，以及罪名标签列表unique_labels.json
 
@@ -26,7 +27,7 @@ run.py   --->   执行模型训练
 
 test.py   --->   执行模型测试
  
-### 2. 模型训练
+### 3. 模型训练
  
 直接运行run.py文件，可以执行模型训练，记得修改随机数种子
  
@@ -34,7 +35,7 @@ test.py   --->   执行模型测试
 python run.py
 ```
  
-### 3. 模型测试
+### 4. 模型测试
  
 执行test.py文件，可以执行模型测试
  
@@ -42,7 +43,7 @@ python run.py
 python test.py
 ```
 
-### 4. 标签映射
+### 5. 标签映射
 
 为了将str类型的罪名标签映射为int类型，需要执行utils.py中的return_unique_labels()函数，得到全部罪名标签的列表，并保存为.json文件：'./data_cail2018/unique_labels.json' 。
 数据加载过程中，将根据该列表对罪名标签进行映射，例如“偷窃”是列表中的第12个元素，则该罪名标签映射为int类型的12。
