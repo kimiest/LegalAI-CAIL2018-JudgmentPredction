@@ -10,6 +10,8 @@
 
 为了便于理解和学习，代码没有过度集成
 
+使用了：1.lr_scheduler='CosineAnnealingLR'  
+未来优化：2.warm_up   2.分组学习率  3.pin_memory=True  4.自动混合精度AMP
  
 ### 2. 文件介绍
  
